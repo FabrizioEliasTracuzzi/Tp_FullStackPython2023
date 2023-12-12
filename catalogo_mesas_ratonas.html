@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="./Imagenes/bambu.ico" type="image/x-icon">
+    <title>Muebleria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/185d696994.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&display=swap');
+    </style>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const homeNav = document.querySelector('.home-nav');
+
+        menuToggle.addEventListener('click', () => {
+            homeNav.classList.toggle('active');
+        });
+    </script>
+    <script>
+        const images = document.querySelectorAll('.home-image');
+        images.forEach(image => {
+          image.addEventListener('click', () => {
+            image.classList.toggle('rotate');
+          });
+        });
+      </script>
+      <script type="text/javascript">(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Unique/96.7.2886.87';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} },{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script>
+ </head>
+
+<body>
+
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <div class="home-nav">
+                <div class="col-title"> <a class="title" href="index.html">Home</a></div>
+                <div class="col-title"> <a class="title" href="about.html">¿Quienes somos?</a></div>
+                <div class="col-title"> <a class="title" href="contacto.html">Contacto</a></div>
+                <div class="col-title"> <a class="title" href="location.html">Sucursales</a></div>
+                <div class="col-title"> <a class="title" href="admin-login.html">Administradores</a></div>
+                
+            </div>
+        </div>
+    </header>
+    <header>
+        
+            <div class="home-nav">
+                <div class="col-title"> <a class="title" href="index.html">Home</a></div>
+                <div class="col-title"> <a class="title" href="about.html">¿Quienes somos?</a></div>
+                <div class="col-title"> <a class="title" href="contacto.html">Contacto</a></div>
+                <div class="col-title"> <a class="title" href="location.html">Sucursales</a></div>
+                <div class="col-title"> <a class="title" href="admin-login.html">Administradores</a></div>
+         </div>
+        
+    </header>
+    <br>
+    <br>
+    <footer>
+        <div class="contenedorfooter">
+            <div class="titlefooter">
+                <h3>AYUDA</h3>
+               
+                <br>
+                <a class="title" href="contact.html">Contacto</a>
+            </div>
+            <div class="titlefooter">
+                <h3>Ubicacion</h3>
+                <b class="title">Avenida San Martin 5734</b>
+
+                <dt>       <a href="./location.html"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.117627933041!2d-58.33356142422157!3d-34.77781396671347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cf411d0255b%3A0xd4c4287e31947c87!2sAv.%20San%20Mart%C3%ADn%205734%2C%20B1884%20San%20Francisco%20Solano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694473210682!5m2!1ses-419!2sar"
+                    width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></dt></a></dt>
+            </div>
+            <div class="titlefooter">
+                <h3>Social</h3>
+
+                <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+                <br>
+                <a class="redsoc" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i> Instagram</a>
+
+            </div>
+
+
+        </div>
+        <div class="pie">
+            <div>Equipo 18</div>
+            <div><img src="./Imagenes/favicon.ico" alt="Favicon"></div>
+            <div>Codo a Codo 2023</div>
+        </div>
+
+
+
+    </footer>
+</body>
+
+<br>
+<b><h1>Catalogo de Mesas Ratonas</h1>></b>
+<br>
+<section class="product">
+<img src="./Imagenes/Mesas Ratonas/a.jpg" alt="Mesa Ratona Con revistero">
+<h2>Mesa Ratona Con revistero</h2>
+<p>Una hermosa mesa de madera hecha a mano, perfecta para su comedor o sala de estar.</p>
+<p>Precio: $200</p>
+<button data-id="16">Agregar al carrito</button>
+</section>
+
+<section class="product">
+<img src="./Imagenes/Mesas Ratonas/c.jpg" alt="Mesa Ratona Nido">
+<h2>Mesa Ratona Nido</h2>
+<p>Una estantería elegante y funcional para organizar tus libros y objetos decorativos.</p>
+<p>Precio: $150</p>
+<button data-id="17">Agregar al carrito</button>
+</section>
+
+<section class="product">
+<img src="./Imagenes/Mesas Ratonas/b.jpeg" alt="Mesa Ratona Tijuana">
+<h2>Mesa Ratona Tijuana</h2>
+<p>Un rack de entretenimiento moderno con amplio espacio de almacenamiento para tus dispositivos.</p>
+<p>Precio: $100</p>
+<button data-id="18">Agregar al carrito</button>
+</section>
+
+<section class="product">
+<img src="./Imagenes/Mesas Ratonas/d.jpeg" alt="Mesa Ratona Redonda">
+<h2>Mesa Ratona Redonda</h2>
+<p>Un elegante escritorio de madera con cajones para tu oficina en casa.</p>
+<p>Precio: $180</p>
+<button data-id="19">Agregar al carrito</button>
+</section>
+<br>
+<script> src="https://unpkg.com/vue@3/dist/vue.global.js"</script>
+<script src="https://unpkg.com/vue@3"></script>
+
+</body>
+<div class="carrito">
+    <!-- Para el carrito -->
+    <section id="cart" class="cart">
+        <h2>Carrito</h2>
+        <ul id="cart-items"> 
+            <!-- para los productos del carrito -->
+        </ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button><span id="checkout-button">Comprar</span></button>
+    </section>
+    </div>
+    
+<script>
+    // Productos en el catálogo de esta pagina
+    const products = [
+    {
+        "id":16,
+        "precio":200,
+        "title": "Mesa Ratona Con revistero"
+    },
+    {
+        "id":17,
+        "precio":150,
+        "title": "Mesa Ratona Nido"
+    },
+    {
+        "id":18,
+        "precio":100,
+        "title": "Mesa Ratona Tijuana"
+    },
+    {
+        "id":19,
+        "precio":180,
+        "title": "Mesa Ratona Redonda"
+    }
+        
+    ];
+
+    // Carrito de compra 
+    const cart = [];
+
+    // agregar un producto al carrito
+    function addToCart(productId) {
+        const product = products.find((p) => p.id === productId);
+        if (product) {
+            cart.push(product);
+        }
+        updateCart();
+    }
+
+    // actualizar el carrito carrito
+    function updateCart() {
+        const cartItems = document.getElementById("cart-items");
+        const cartTotal = document.getElementById("cart-total");
+        const checkoutButton = document.getElementById("checkout-button");
+
+        cartItems.innerHTML = "";
+        let total = 0;
+
+        cart.forEach((product, index) => {
+            const item = document.createElement("li");
+            item.textContent = `${product.title} - $${product.precio}`;
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Eliminar";
+            deleteButton.addEventListener("click", () => {
+                cart.splice(index, 1);
+                updateCart();
+            });
+            item.appendChild(deleteButton);
+            cartItems.appendChild(item);
+            total += product.precio;
+        });
+
+        cartTotal.textContent = total;
+    }
+
+    // "Agregar al carrito"
+    const addToCartButtons = document.querySelectorAll("button[data-id]");
+    addToCartButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const productId = parseInt(button.getAttribute("data-id"));
+            addToCart(productId);
+        });
+    });
+
+    // Botón "Realizar Compra"
+    const checkoutButton = document.getElementById("checkout-button");
+    checkoutButton.addEventListener("click", () => {
+        alert("Compra realizada con éxito");
+        cart.length = 0; 
+        updateCart();
+    });
+
+</script>
+<script>
+    // Menu chico
+    document.addEventListener("DOMContentLoaded", function () {
+  var menuToggle = document.getElementById("menu-toggle");
+
+  var homeNav = document.querySelector(".home-nav");
+
+  menuToggle.addEventListener("click", function () {
+    if (homeNav.style.display === "block") {
+      homeNav.style.display = "none";
+    } else {
+      homeNav.style.display = "block";
+    }
+  });
+});
+
+    </script>
+    <div id="confirmation-form" style="display: none;">
+        <h2>Confirmación de Pedido</h2>
+        <form id="order-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required><br>
+    
+            <input type="submit" value="Confirmar Pedido">
+        </form>
+</body>
