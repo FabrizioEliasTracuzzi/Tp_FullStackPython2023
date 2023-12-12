@@ -1,0 +1,359 @@
+header {
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.nav {
+    color: white;
+    background-color: black;
+    flex-direction: row;
+    display: inline-flex;
+    position: absolute;
+
+}
+
+.home-nav {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif; 
+
+}
+
+
+.col {
+    background-color: black;
+    position: relative;
+    display: flex;
+
+}
+
+.row{    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -2px; }
+
+.menu-toggle{
+    display: none;
+}
+/*  para dispositivos con ancho menor o igual a 768px  */
+@media (max-width: 768px) {
+
+    /*@media asocia un grupo de declaraciones anidadas, en un bloque CSS delimitado por llaves, con una condición definida por un media query */
+    .volteador figure {
+        align-content: center;
+      }
+      
+    .row {
+        flex-direction: column; 
+        /* Cambia la dirección de flex a columna */
+        align-items: center;
+        height: auto;
+        width: 100%;
+        display: flex;
+
+
+    }
+
+    .col {
+        
+        position: relative;
+        width: 100%;
+        display: flexbox;
+        align-items: center;
+        display: flex;
+
+    }
+
+ 
+
+    img {
+        width: 100%;
+        height: 500px;
+    }
+
+
+    /* ESTO ES PARA EL HEADER */
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú en dispositivos móviles */
+        text-align: left;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .home-nav {
+        display: none; /*Oculta el menú horizontal en dispositivos móviles */
+        flex-direction: column; /* Cambia la dirección a vertical */
+        align-items: center;
+        position: relative;
+        background-color: black;
+        width: 100%;
+        padding: 10px;
+    }
+
+    ul:active {
+        display: flex; 
+    }
+
+    .col-title {
+        margin-top: 10px;
+        text-align: center; 
+    }
+
+    header {
+        text-align: left; 
+    }
+    
+}
+
+
+.col-title {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+
+
+
+body {
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 250vh;
+    /* flex-direction: column; */
+   
+    
+}
+
+.video {
+    width: 100%;
+    height: 350px;
+    position: relative;
+
+}
+
+.video-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*ajusta el video al contenedor */
+}
+
+.texto-video-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.rotate {
+    transform: rotateY(180deg); /* Rota la imagen 180 grados en el eje Y */
+  }
+
+.mapa {
+    display: block;
+    margin: 0 auto;
+    }
+
+
+/* Style para ABOUT*/
+.about {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: justify; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+
+
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para los productos */
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.product img {
+    max-width: 50%;
+    height: auto;
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+/* Estilo para catalogo" */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.muebles-lista {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.mueble-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.detalle-mueble {
+    display: none;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.detalle-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.detalle-lista li {
+    margin: 5px 0;
+}
+
+
+
+.volteador figure {
+    margin: 30px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    
+  }
+  
+  .volteador figure img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 10;
+    border-radius: 4%
+  }
+  
+  .volteador figure figcaption {
+    display: block;
+    position: absolute;
+    z-index: 5;
+   /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+    background-size: 85%;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+     transition: all 1s;
+         text-align:center;
+       font-family:"Courier New", Courier, monospace;
+       font-size:x-large;
+      padding:30px;
+      color:white;
+       background-color: #222;
+    
+     
+  }
+  
+  .volteador figure img {
+    backface-visibility: hidden;
+    transition: all 1s;
+    width: 300px;
+    height: 500px;
+    
+    
+  }
+  
+  .volteador figure:hover img,
+  figure.hover img {
+      transform: rotateY(180deg);
+     opacity: 0 
+  }
+  
+  .volteador figure:hover figcaption,
+  figure.hover figcaption {
+      transform: rotateY(0);
+  }
+  .cart {
+    position: fixed;
+    top: 60px; 
+    right: 20px;
+    color: white;
+    background-color:gray;
+    border: 1px solid #000000;
+    padding: 10px;
+    opacity: 0,5;
+    width: 200px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .cart button {
+    display: block;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
